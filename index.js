@@ -21,8 +21,6 @@ let pool = new Pool({
     ssl  : true
   });
 
- 
-
   console.log(user,host,database,password,por);
   pool.connect(function(err) {
     if (err) throw err;
