@@ -12,7 +12,7 @@
     <div class="main-section container">
         <div class="add-form">
             <h4>Input the item details correctly</h4>
-            <form action="http://localhost:3000/info/add" method="POST">
+            <form action="/info/add" method="POST">
                 <label for="name">Name of product:</label>
                 <input type="text" name="name" id="name">
                 <label for="quantity">Quantity:</label>
@@ -25,7 +25,7 @@
         
         <div class="delete-form">
             <h4> Delete Section</h4>
-            <form action="http://localhost:3000/info/delete" method="POST">
+            <form action="/info/delete" method="POST">
                 <label for="delete">The name of the item to delete:</label>
                 <input type="text" name="delete" id="delete">
                 <input type="submit" value="DELETE">
@@ -46,7 +46,7 @@
     </div>  
     <div class="container">  
         <div class="retrieve">
-            <form action="http://localhost:3000/" method="GET">
+            <form action="/" method="GET">
                 <input class="submit" type="submit" value="RETRIEVE LIST OF ITEMS">
             </form>
         </div>
@@ -58,6 +58,8 @@
             <h3>Item</h3>
             <h3>Quantity</h3>
             <h3>Description</h3>
+        </div>
+        <div class="grid container toadd"> 
         </div>
     </div>
 
