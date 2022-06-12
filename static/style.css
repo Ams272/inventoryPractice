@@ -1,0 +1,76 @@
+:root{
+    --space: 20px; 
+}
+header h1{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-section{
+    padding: var(--space);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.add-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.update form, .delete-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text], input[type=number]  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+  }
+
+  input[type=text]:focus, input[type=number]:focus {
+    border: 3px solid brown;
+  }
+
+input[type=submit]{
+    padding: 10px;
+    color: brown;
+    background-color: bisque;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.submit{
+    width: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.added{
+    color: green;
+}

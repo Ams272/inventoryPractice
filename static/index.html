@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <header class="container">
+        <h1>SHOPIFY INVENTORY</h1>
+    </header>
+    <div class="main-section container">
+        <div class="add-form">
+            <h4>Input the item details correctly</h4>
+            <form action="http://localhost:3000/info/add" method="POST">
+                <label for="name">Name of product:</label>
+                <input type="text" name="name" id="name">
+                <label for="quantity">Quantity:</label>
+                <input type="number" name="quantity" id="quantity">
+                <label for="comment">Comment/Description:</label>
+                <input type="text" name="comment" id="comment">
+                <input class="add" type="submit" value="ADD">
+            </form>
+        </div>
+        
+        <div class="delete-form">
+            <h4> Delete Section</h4>
+            <form action="http://localhost:3000/info/delete" method="POST">
+                <label for="delete">The name of the item to delete:</label>
+                <input type="text" name="delete" id="delete">
+                <input type="submit" value="DELETE">
+            </form>
+        </div>
+        
+        <div class="update">
+            <h4> Update Item</h4>
+            <form action="/info/update" method="POST">
+                <label for="oldValue">The item to be updated:</label>
+                <input type="text" name="oldValue" id="oldValue">
+                <label for="newValue">The new item:</label>
+                <input type="text" name="newValue" id="newValue">
+                <input type="submit" value="UPDATE">
+            </form>
+        </div>
+        
+    </div>  
+    <div class="container">  
+        <div class="retrieve">
+            <form action="http://localhost:3000/" method="GET">
+                <input class="submit" type="submit" value="RETRIEVE LIST OF ITEMS">
+            </form>
+        </div>
+        
+    </div>
+
+    <div class="sub-section">
+        <div class="grid container">
+            <h3>Item</h3>
+            <h3>Quantity</h3>
+            <h3>Description</h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    </body>
+    </html>
